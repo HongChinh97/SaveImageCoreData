@@ -7,11 +7,23 @@
 //
 
 import UIKit
-
+import CoreData
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
-    var entity: [Images]?
+    var array: [String] = ["Ha Noi","Thai Binh","Nghe An","Thanh Hoa"]
+    var test: [String] = []
+    var entity: [Entity]?
+    @IBOutlet weak var nameText: UITextField! {
+        didSet {
+            nameText.text = "xxx"
+        }
+    }
     
+    @IBOutlet weak var label: UILabel! {
+        didSet {
+            label.text = "???"
+        }
+    }
     @IBOutlet weak var imageView: UIImageView!{
         didSet{
             imageView.image = UIImage(named: "images")
@@ -19,9 +31,17 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let entity = try? (AppDelegate.context.fetch(Images.fetchRequest())) as [Images], !entity.isEmpty {
-            imageView.image = entity.last?.picture
+        
+        if let entity = try? (AppDelegate.context.fetch(Entity.fetchRequest())) as [Entity], !entity.isEmpty {
+            imageView.image = entity.last?.image as? UIImage
+            nameText.text = entity.last?.name
+            label.text = array.last
+//            label.text = String(entity.count)
+//            print(entity.count)
+            
         }
+        
+       
     }
 
     
@@ -63,11 +83,13 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
 
     @IBAction func saveButton(_ sender: UIBarButtonItem) {
-        guard imageView.image != nil else {
+        guard imageView.image != nil && nameText.text != nil && label.text != nil else {
             return
         }
-        let context = Images(context: AppDelegate.context)
-        context.picture = imageView.image
+        let context = Entity(context: AppDelegate.context)
+        context.image = imageView.image
+        context.name = nameText.text
+        context.arrayName = array as NSObject
         AppDelegate.saveContext()
     }
     

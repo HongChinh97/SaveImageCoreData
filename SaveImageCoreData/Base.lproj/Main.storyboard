@@ -30,11 +30,33 @@
                                     <outletCollection property="gestureRecognizers" destination="IoC-yb-74I" appends="YES" id="7AB-gE-5Ii"/>
                                 </connections>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNP-eT-BYA">
+                                <rect key="frame" x="16" y="88" width="343" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPg-ML-n2r">
+                                <rect key="frame" x="16" y="571" width="343" height="26"/>
+                                <color key="backgroundColor" red="0.3489091976" green="1" blue="0.79255871099999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="YjQ-fx-dyQ" firstAttribute="trailing" secondItem="zPg-ML-n2r" secondAttribute="trailing" constant="16" id="56r-ae-sXk"/>
+                            <constraint firstItem="CNP-eT-BYA" firstAttribute="leading" secondItem="YjQ-fx-dyQ" secondAttribute="leading" constant="16" id="Mak-UG-QFN"/>
+                            <constraint firstItem="CNP-eT-BYA" firstAttribute="top" secondItem="YjQ-fx-dyQ" secondAttribute="top" constant="24" id="Suf-gF-WCE"/>
                             <constraint firstItem="LeH-83-b0k" firstAttribute="centerY" secondItem="mbq-ga-v1I" secondAttribute="centerY" id="W3r-Gd-tjV"/>
+                            <constraint firstItem="YjQ-fx-dyQ" firstAttribute="bottom" secondItem="zPg-ML-n2r" secondAttribute="bottom" constant="70" id="Z2B-Jp-yTF"/>
+                            <constraint firstItem="zPg-ML-n2r" firstAttribute="top" secondItem="LeH-83-b0k" secondAttribute="bottom" constant="50" id="agA-4J-6lA"/>
+                            <constraint firstItem="CNP-eT-BYA" firstAttribute="centerX" secondItem="mbq-ga-v1I" secondAttribute="centerX" id="an1-jX-p8i"/>
+                            <constraint firstItem="zPg-ML-n2r" firstAttribute="leading" secondItem="YjQ-fx-dyQ" secondAttribute="leading" constant="16" id="gGn-Q8-44b"/>
                             <constraint firstItem="LeH-83-b0k" firstAttribute="centerX" secondItem="mbq-ga-v1I" secondAttribute="centerX" id="htj-Jo-wfc"/>
+                            <constraint firstItem="LeH-83-b0k" firstAttribute="top" secondItem="CNP-eT-BYA" secondAttribute="bottom" constant="24" id="naf-GL-BPo"/>
+                            <constraint firstItem="YjQ-fx-dyQ" firstAttribute="trailing" secondItem="CNP-eT-BYA" secondAttribute="trailing" constant="16" id="t0Y-qL-SIp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YjQ-fx-dyQ"/>
                     </view>
@@ -47,6 +69,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="LeH-83-b0k" id="49M-Tf-i7h"/>
+                        <outlet property="label" destination="zPg-ML-n2r" id="97e-rV-jpz"/>
+                        <outlet property="nameText" destination="CNP-eT-BYA" id="h8K-SD-eUk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oK-cw-o7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -56,7 +80,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2097" y="91"/>
+            <point key="canvasLocation" x="2130" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xm3-ZA-QNh">

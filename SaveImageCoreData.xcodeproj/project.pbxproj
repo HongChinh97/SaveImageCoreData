@@ -8,26 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8436E83921A6A48A003F4F80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436E83821A6A48A003F4F80 /* ViewController.swift */; };
-		8436E83C21A6AA0B003F4F80 /* Images+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436E83A21A6AA0B003F4F80 /* Images+CoreDataProperties.swift */; };
-		8436E83D21A6AA0B003F4F80 /* Images+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436E83B21A6AA0B003F4F80 /* Images+CoreDataClass.swift */; };
 		849C476A21A63DD3002644E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C476921A63DD3002644E9 /* AppDelegate.swift */; };
 		849C476F21A63DD3002644E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C476D21A63DD3002644E9 /* Main.storyboard */; };
-		849C477221A63DD3002644E9 /* SaveImageCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 849C477021A63DD3002644E9 /* SaveImageCoreData.xcdatamodeld */; };
 		849C477421A63DD5002644E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849C477321A63DD5002644E9 /* Assets.xcassets */; };
 		849C477721A63DD5002644E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C477521A63DD5002644E9 /* LaunchScreen.storyboard */; };
+		84C5A8AE21ACE33500693DDA /* Image.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84C5A8AC21ACE33500693DDA /* Image.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8436E83821A6A48A003F4F80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8436E83A21A6AA0B003F4F80 /* Images+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Images+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8436E83B21A6AA0B003F4F80 /* Images+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Images+CoreDataClass.swift"; sourceTree = "<group>"; };
 		849C476621A63DD3002644E9 /* SaveImageCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveImageCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849C476921A63DD3002644E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849C476E21A63DD3002644E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		849C477121A63DD3002644E9 /* SaveImageCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaveImageCoreData.xcdatamodel; sourceTree = "<group>"; };
 		849C477321A63DD5002644E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849C477621A63DD5002644E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849C477821A63DD5002644E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C5A8AD21ACE33500693DDA /* Image.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Image.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +62,7 @@
 				849C477321A63DD5002644E9 /* Assets.xcassets */,
 				849C477521A63DD5002644E9 /* LaunchScreen.storyboard */,
 				849C477821A63DD5002644E9 /* Info.plist */,
-				849C477021A63DD3002644E9 /* SaveImageCoreData.xcdatamodeld */,
-				8436E83B21A6AA0B003F4F80 /* Images+CoreDataClass.swift */,
-				8436E83A21A6AA0B003F4F80 /* Images+CoreDataProperties.swift */,
+				84C5A8AC21ACE33500693DDA /* Image.xcdatamodeld */,
 			);
 			path = SaveImageCoreData;
 			sourceTree = "<group>";
@@ -144,11 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C5A8AE21ACE33500693DDA /* Image.xcdatamodeld in Sources */,
 				8436E83921A6A48A003F4F80 /* ViewController.swift in Sources */,
-				8436E83D21A6AA0B003F4F80 /* Images+CoreDataClass.swift in Sources */,
-				849C477221A63DD3002644E9 /* SaveImageCoreData.xcdatamodeld in Sources */,
 				849C476A21A63DD3002644E9 /* AppDelegate.swift in Sources */,
-				8436E83C21A6AA0B003F4F80 /* Images+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,13 +338,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		849C477021A63DD3002644E9 /* SaveImageCoreData.xcdatamodeld */ = {
+		84C5A8AC21ACE33500693DDA /* Image.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				849C477121A63DD3002644E9 /* SaveImageCoreData.xcdatamodel */,
+				84C5A8AD21ACE33500693DDA /* Image.xcdatamodel */,
 			);
-			currentVersion = 849C477121A63DD3002644E9 /* SaveImageCoreData.xcdatamodel */;
-			path = SaveImageCoreData.xcdatamodeld;
+			currentVersion = 84C5A8AD21ACE33500693DDA /* Image.xcdatamodel */;
+			path = Image.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
